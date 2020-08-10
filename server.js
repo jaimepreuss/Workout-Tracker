@@ -3,6 +3,7 @@ const logger = require("morgan");
 const mongoose = require("mongoose");
 
 var MONGODB_URI = process.env.URI || "mongodb://localhost/mongoheadlines";
+mongoose.connect(MONGODB_URI);
 
 const PORT = 3000;
 
