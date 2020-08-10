@@ -2,6 +2,8 @@ const express = require("express");
 const logger = require("morgan");
 const mongoose = require("mongoose");
 
+var MONGODB_URI = process.env.URI || "mongodb://localhost/mongoheadlines";
+
 const PORT = 3000;
 
 const app = express();
